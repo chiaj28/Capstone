@@ -1,0 +1,14 @@
+<?php
+
+	define('HOST', '192.168.88.193');
+	define('USER', 'user');
+	define('PASS', 'P@ssw0rd');
+	define('NAME', 'sky');
+
+	$string = "mysql:host=".HOST.";dbname=".NAME;
+	if(!$con = new PDO($string,USER,PASS))
+	{
+		die("Failed to connect");
+	}
+
+?>
